@@ -18,6 +18,14 @@ $(function () {
 		e.preventDefault(); //???
 		console.log('#' + $(this).data('scroll'))
 	});
-});
+	// Add class Active On Navbar link and Remove From Siblings
+	$('.navBar li a').click(function () {
+
+		$('.navBar a').removeClass('active');
+		$(this).addClass('active');
+		// $(this).addClass('active').siblings().removeClass('active');
+	});
+
+}); 
 
 

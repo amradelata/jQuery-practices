@@ -24,6 +24,10 @@ body
 	color: #fff;
 	padding: 20px
 }
+.navBar li a.active{
+	color: #ffea00;
+}
+
 .navBar li a
 {
 	text-decoration: none;
