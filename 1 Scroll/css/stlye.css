@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;	
+	margin-top: 0;
+	padding: 0;
+}
+body
+{
+	font-family: Tahoma, Arial
+}
+
+.navBar {
+	background: #333;
+	text-align: center;
+}
+
+.navBar li 
+{
+	display: inline-block;
+	color: #fff;
+	padding: 20px
+}
+.navBar li a
+{
+	text-decoration: none;
+	color: #fff;
+}
+.block
+{
+	height: 100vh;
+}
