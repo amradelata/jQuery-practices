@@ -9,10 +9,10 @@ body
 }
 
 .navBar {
-	background: #333;
+	background: rgba(0, 0, 0, .7);
 	text-align: center;
 	margin: 0;
-	padding: 10px;
+	padding: 5px;
 	position: fixed;
 	width: 100%;
 	top: 0;
@@ -36,4 +36,8 @@ body
 .block
 {
 	height: 100vh;
+	background: #eee;
+	margin-bottom: 20px;
+	padding: 60px 0;
+	text-align: center;
 }
