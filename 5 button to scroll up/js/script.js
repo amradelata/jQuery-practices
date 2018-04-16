@@ -26,10 +26,10 @@ $(function () {
 		// $(this).addClass('active').siblings().removeClass('active');
 	});
 
-	//scroll navbar links with sections     in scroll do that
+	//in scroll do that
  
 	$(window).scroll(function () {
-	// in each div had class block do that
+	// in each div had class block do that      scroll navbar links with sections
 		$('.block').each(function () {
 
 			if ($(window).scrollTop() > $(this).offset().top){
@@ -43,6 +43,26 @@ $(function () {
 
 			}
 		});
+		// scrollTop button
+
+		let buttonTop = $('.scroll-top');
+		if($(window).scrollTop()>=3000){
+			buttonTop.fadeIn();
+			// console.log('dfds')
+		}else{
+			buttonTop.fadeOut();
+		}
+
+		 $('.scroll-top').click(function () {
+
+		$('html, body').animate({
+
+			scrollTop:0
+
+		},1000);
+
+		});
+
 	});
 }); 
 
