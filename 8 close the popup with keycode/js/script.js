@@ -80,6 +80,13 @@ $(function () {
 
 		 even.stopPropagation();   //don't close this when i click on it 
 		 });
+
+		 $(document).keydown(function (e){
+
+		 	if (e.keyCode == 27){
+		 		$('.popup').fadeOut();
+		 	}
+		 });
 }); 
 
 
