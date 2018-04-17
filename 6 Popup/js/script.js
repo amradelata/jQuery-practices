@@ -63,7 +63,21 @@ $(function () {
 
 		});
 
+
 	});
+		 // popUp
+		 $(".show-more").click(function () {
+
+		 	$('.popup').fadeIn();
+		 });
+		 $(".popup").click(function () {
+
+		 	$(this).fadeOut();
+		 });
+		 $(".popup .inner").click(function (even) {
+
+		 even.stopPropagation();
+		 });
 }); 
 
 
