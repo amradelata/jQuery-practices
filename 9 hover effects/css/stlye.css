@@ -107,3 +107,37 @@ body
 }
 
 
+/*bouttons-effects*/
+
+.bouttons-effects .from-left
+{
+	cursor: pointer;
+	display: inline-block;
+	text-align: center;
+	margin-left: 10px;
+	margin-top: 10px;
+	background: #e74c3c;
+	color: #fff;
+	width: 140px;
+	padding: 10px;
+	border-radius:10px;
+	font-weight: bold;
+	border:none; 
+	position: relative;
+	overflow: hidden;
+}
+
+.bouttons-effects.from-left span:first-child {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 100%;
+	display: block;
+	background: #4cd137;
+	z-index: 1;
+}
+.bouttons-effects.from-left span:last-child {
+	position: relative;
+	z-index: 2;
+}
