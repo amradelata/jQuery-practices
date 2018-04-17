@@ -15,7 +15,7 @@ $(function () {
 			scrollTop:$('#' + $(this).data('scroll')).offset().top + 1
 		},1000);
 
-		e.preventDefault(); //???
+		// e.preventDefault(); //???
 		console.log('#' + $(this).data('scroll'))
 	});
 	// Add class Active On Navbar link and Remove From Siblings
@@ -68,15 +68,17 @@ $(function () {
 		 // popUp
 		 $(".show-more").click(function () {
 
-		 	$('.popup').fadeIn();
+		 	$($(this).data('popup')).fadeIn();
 		 });
+
 		 $(".popup").click(function () {
 
 		 	$(this).fadeOut();
 		 });
+
 		 $(".popup .inner").click(function (even) {
 
-		 even.stopPropagation();
+		 even.stopPropagation();   //don't close this when i click on it 
 		 });
 }); 
 
