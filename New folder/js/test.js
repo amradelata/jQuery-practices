@@ -53,6 +53,9 @@ $(function () {
 			buttonTop.fadeOut();
 		}
 
+
+	});
+
 		 $('.scroll-top').click(function () {
 
 		$('html, body').animate({
@@ -62,9 +65,6 @@ $(function () {
 		},1000);
 
 		});
-
-
-	});
 		 // popUp
 		 $(".show-more").click(function () {
 
@@ -90,15 +90,17 @@ $(function () {
 		 //Buttons With Effects
 		 $('.from-left').hover(function () {
 		 	$(this).find('span').eq(0).animate({
-		 		width: '100%'
+		 		width: '0'
 		 	},500);
 
 		 }, function () {
 			$(this).find('span').eq(0).animate({
-				width: '0'
+				width: '100%'
 			},500);
 
 		 });
+
+	
 }); 
 
 
