@@ -80,12 +80,11 @@ body {
   cursor: pointer;
   display: inline-block;
   text-align: center;
-  margin-left: 10px;
+  margin: 20px;
   margin-top: 10px;
   background: #9c88ff;
   color: #fff;
-  width: 140px;
-  padding: 10px;
+  padding: 10px 50px;
   border-radius: 10px;
   font-weight: bold;
   border: none;
@@ -98,10 +97,36 @@ body {
     width: 0;
     height: 100%;
     display: block;
-    background: #8c7ae6;
+    background: #b5a6fd;
+    background-size: cover;
     z-index: 1; }
   .bouttons-effects .from-left span:last-child {
     position: relative;
     z-index: 2; }
+
+.border-left {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  margin: 20px;
+  margin-top: 10px;
+  background: #fff;
+  color: #2980b9;
+  padding: 10px 50px;
+  border-radius: 0;
+  font-weight: bold;
+  border: none;
+  position: relative;
+  overflow: visble; }
+  .border-left span:first-child {
+    position: absolute;
+    background: #2980b9;
+    width: 0;
+    height: 3px;
+    left: 0;
+    top: auto;
+    bottom: -3px;
+    display: block;
+    z-index: 1; }
 
 /*# sourceMappingURL=style.css.map */

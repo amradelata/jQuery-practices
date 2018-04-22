@@ -87,15 +87,29 @@ $(function () {
 		 		$('.popup').fadeOut();
 		 	}
 		 });
-		 //Buttons With Effects
+		 //first Buttons With Effects 
 		 $('.from-left').hover(function () {
 		 	$(this).find('span').eq(0).animate({
-		 		width: '0'
+		 		width: '100%'
 		 	},500);
 
 		 }, function () {
 			$(this).find('span').eq(0).animate({
-				width: '100%'
+				width: '0'
+			},500);
+
+		 });
+
+		 // second Buttons With Effects
+
+		 $('.border-left').hover(function () {
+		 	$(this).find('span').eq(0).animate({
+		 		width: '100%'
+		 	},500);
+
+		 }, function () {
+			$(this).find('span').eq(0).animate({
+				width: '0'
 			},500);
 
 		 });
