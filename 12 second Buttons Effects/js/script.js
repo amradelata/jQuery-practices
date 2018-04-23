@@ -100,7 +100,7 @@ $(function () {
 
 		 });
 
-		 // second Buttons With Effects
+		 // second Buttons With Effects border-bottom
 
 		 $('.border-left').hover(function () {
 		 	$(this).find('span').eq(0).animate({
@@ -115,31 +115,41 @@ $(function () {
 		 });
 // animated-progress
 
-$('.animated-progress span').each(function () {
+$('.animated-progress span').each(function () {         //every  'span' i do this function on it 
 	$(this).animate({
-		width: $(this).attr('data-progress')
+		width: $(this).attr('data-progress')  			//width = the value in 'data-progress'
 
-	}, 1000, function () {
+	}, 1000, function () {		//here after i get the width  the callback function... start				
 
 
-		$(this).text($(this).attr('data-progress'));
+		$(this).text($(this).attr('data-progress'));  //i get the value in 'data-progress' and i put it in 'span' as text
 	});
 });
 	// fixed menu
-	$('.fixed-menu .fa-globe').on('click', function () {
+	$('.fixed-menu .fa-globe').on('click', function () {  //When i click on the '.fa-globe' the function start
+		console.log($('.fixed-menu'))
+
+		$(this).parent('.fixed-menu').toggleClass('is-visible');    // in '.fixed-menu' put and removeClass 'is-visible'
 
 
-		$(this).parent('.fixed-menu').toggleClass('is-visible');
-		if($(this).parent('.fixed-menu').hasClass('is-visible')){
-
-			$(this).parent('.fixed-menu').animate({
+		if($(this).parent('.fixed-menu').hasClass('is-visible')){    //if '.fixed-menu' hasClass 'is-visible'
+  
+			$(this).parent('.fixed-menu').animate({                 //'.fixed-menu' left 0
 				left: 0	
-			}, 500);
+				}, 500);
+			// $('body').animate({
+			// 	paddingLeft: '220px'   								this push the body 
+			// }, 500);
 		}else{
 			$(this).parent('.fixed-menu').animate({
-				// left: '-220px'	
-				left: '-98%'
+				left: '-240px'	
+				// left: '-98%' ...... image 
+
 			}, 500);
+
+			// $('body').animate({                                this push the body
+			// paddingLeft: 0
+			// }, 500);
 		}
 	});
 

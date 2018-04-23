@@ -25,15 +25,14 @@ body {
     color: #fff; }
 
 .fixed-menu {
-  background: url("https://images.pexels.com/photos/531057/pexels-photo-531057.jpeg?cs=srgb&dl=black-and-white-casual-face-531057.jpg&fm=jpg");
-  background-size: cover;
+  background: #333;
   color: #eee;
   padding: 10px;
   position: fixed;
-  left: -98%;
+  left: -240px;
   top: 0;
   height: 100%;
-  width: 98%;
+  width: 240px;
   z-index: 9999; }
   .fixed-menu .fa-globe {
     position: absolute;
