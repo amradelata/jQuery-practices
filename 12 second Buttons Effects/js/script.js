@@ -113,8 +113,14 @@ $(function () {
 			},500);
 
 		 });
+// animated-progress
 
-	
+$('.animated-progress span').each(function () {
+	$(this).animate({
+		// width: '55%'
+		width: $(this).attr('data-progress')
+	}, 1000)
+});
 }); 
 
 
