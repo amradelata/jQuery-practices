@@ -103,7 +103,7 @@ $(function () {
 		 // second Buttons With Effects border-bottom
 
 		 $('.border-left').hover(function () {
-		 	$(this).find('span').eq(0).animate({
+		 	$(this).find('span').eq(0).animate({         //".eq(0)" mean "first span"
 		 		width: '100%'
 		 	},500);
 
@@ -151,6 +151,20 @@ $('.animated-progress span').each(function () {         //every  'span' i do thi
 			// paddingLeft: 0
 			// }, 500);
 		}
+	});
+
+
+	// chang-colors
+
+	$('.chang-colors li').on('click', function () {
+		$('body').attr('data-default-color', $(this).data('color'));
+
+		
+		// this two line mean when i click on the 'li' will be add attr 'data-default-color'
+		 // and get the value 'data-color' from 'li ' i click on it and put it in the 'data-default-color'
+		// to bee like this (data-default-color="purple")
+
+		
 	});
 
 }); 

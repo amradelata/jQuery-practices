@@ -53,12 +53,30 @@ body
 		text-align: center
 		border-radius: 0 10px 10px 0
 		cursor: pointer
-	h3, p
-		color: #fff
-		width: 14%
 
-	h3, p:hover
-		background: #333
+	.chang-colors li
+		width: 25px
+		border-radius: 50%
+		margin: 20px
+		// list-style: none    ?????
+		// display: inline-block
+		cursor: pointer
+
+
+	[data-color="blue"]
+		background-color: #3498db
+
+	[data-color="red"]
+		background-color: #c0392b
+
+	[data-color="green"]
+		background-color: #27ae60
+
+
+	[data-color="purple"]
+		background-color: #8e44ad
+
+
 
 
 	
@@ -190,6 +208,49 @@ body
 		color: #fff
 
 
+// start website theme colors
+
+
+
+// end website theme colors
+
+
+
+	[data-default-color="blue"] .skin-color
+		color: #3498db
+
+	[data-default-color="blue"] .skin-background
+		background: #3498db
+		color: #fff
+
+
+
+
+	[data-default-color="red"] .skin-color
+		color: #c0392b
+
+	[data-default-color="red"] .skin-background
+		background: #c0392b
+		color: #fff
+
+
+
+
+	[data-default-color="green"] .skin-color
+		color: #27ae60
+
+	[data-default-color="green"] .skin-background
+		background: #27ae60
+		color: #fff
+
+
+
+	[data-default-color="purple"] .skin-color
+		color: #8e44ad
+
+	[data-default-color="purple"] .skin-background
+		background: #8e44ad
+		color: #fff
 
 
 
