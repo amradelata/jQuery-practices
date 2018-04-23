@@ -117,9 +117,13 @@ $(function () {
 
 $('.animated-progress span').each(function () {
 	$(this).animate({
-		// width: '55%'
 		width: $(this).attr('data-progress')
-	}, 1000)
+
+	}, 1000, function () {
+
+
+		$(this).text($(this).attr('data-progress'));
+	});
 });
 }); 
 
