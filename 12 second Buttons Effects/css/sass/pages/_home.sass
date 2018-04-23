@@ -81,7 +81,7 @@ body
 
 	
 .block
-	height: 100vh
+	min-height: 1200px 
 	background: #eee
 	margin-bottom: 20px
 	padding: 60px 0
@@ -208,14 +208,34 @@ body
 		color: #fff
 
 
+// gallery
+.gallery
+	width: 800px
+	margin: auto
+	padding: 3px
+	background: #fff
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+
+	img
+		max-width: 100%
+
+	.thumbnails
+		overflow: hidden
+
+	.thumbnails img
+		width: 19.2%
+		float: left
+		border: 3px solid #bbb
+		cursor: pointer
+
+	.thumbnails img:not(:last-child)
+		margin-right: 1%
+	
+.gallery .thumbnails .selected
+	border: 3px solid #130f40
+
+
 // start website theme colors
-
-
-
-// end website theme colors
-
-
-
 [data-default-color="blue"] .skin-color
 	color: #3498db
 
@@ -253,7 +273,7 @@ body
 	color: #fff
 
 
-
+// end website theme colors
 
 
 

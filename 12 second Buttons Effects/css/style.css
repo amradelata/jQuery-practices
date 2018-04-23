@@ -60,7 +60,7 @@ body {
     background-color: #8e44ad; }
 
 .block {
-  height: 100vh;
+  min-height: 1200px;
   background: #eee;
   margin-bottom: 20px;
   padding: 60px 0;
@@ -177,6 +177,27 @@ body {
     display: block;
     background: #4cd137;
     color: #fff; }
+
+.gallery {
+  width: 800px;
+  margin: auto;
+  padding: 3px;
+  background: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+  .gallery img {
+    max-width: 100%; }
+  .gallery .thumbnails {
+    overflow: hidden; }
+  .gallery .thumbnails img {
+    width: 19.2%;
+    float: left;
+    border: 3px solid #bbb;
+    cursor: pointer; }
+  .gallery .thumbnails img:not(:last-child) {
+    margin-right: 1%; }
+
+.gallery .thumbnails .selected {
+  border: 3px solid #130f40; }
 
 [data-default-color="blue"] .skin-color {
   color: #3498db; }
