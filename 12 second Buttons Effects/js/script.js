@@ -125,6 +125,24 @@ $('.animated-progress span').each(function () {
 		$(this).text($(this).attr('data-progress'));
 	});
 });
+	// fixed menu
+	$('.fixed-menu .fa-globe').on('click', function () {
+
+
+		$(this).parent('.fixed-menu').toggleClass('is-visible');
+		if($(this).parent('.fixed-menu').hasClass('is-visible')){
+
+			$(this).parent('.fixed-menu').animate({
+				left: 0	
+			}, 500);
+		}else{
+			$(this).parent('.fixed-menu').animate({
+				// left: '-220px'	
+				left: '-98%'
+			}, 500);
+		}
+	});
+
 }); 
 
 
