@@ -233,20 +233,28 @@ body
 		opacity: .7
 
 
-
-
-
-
 	.thumbnails img:not(:last-child)
 		margin-right: 1%
-
-
 
 	
 .gallery .thumbnails .selected
 	border: 3px solid #130f40
 	opacity: 1
+.gallery .master-img
+	height: 551px
+	position: relative
+.gallery .master-img i
+	padding: 10px
+	position: absolute
+	top: 0
+	cursor: pointer
+	z-index: 2
 
+.gallery .master-img .fa-chevron-left
+	left: 0
+
+.gallery .master-img .fa-chevron-right
+	right: 0
 
 // start website theme colors
 [data-default-color="blue"] .skin-color

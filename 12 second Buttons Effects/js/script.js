@@ -179,6 +179,41 @@ $('.animated-progress span').each(function () {         //every  'span' i do thi
 
 	});
 
+
+
+	$('.master-img .fa-chevron-right').on('click', function () {
+
+		if ($('.thumbnails .selected').is(':last-child')) {
+
+			$('.thumbnails img').eq(0).click();                 //if the image .selected is last-child get my image number one
+																//else keep going and get my next  image
+
+		}else{
+
+			$('.thumbnails .selected').next().click();
+
+			 }
+
+
+		
+	});
+
+	$('.master-img .fa-chevron-left').on('click', function () {
+
+		if ($('.thumbnails .selected').is(':first-child')) {
+
+			$('.thumbnails img:last').click();
+ 																//if the image .selected is first-child get my the last image
+																//else keep going and get my prev  image
+		}else{
+
+			$('.thumbnails .selected').prev().click();
+
+			 }
+
+	});
+
+
 }); 
 
 
