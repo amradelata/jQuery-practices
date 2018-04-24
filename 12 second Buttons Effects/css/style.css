@@ -192,12 +192,17 @@ body {
     width: 19.2%;
     float: left;
     border: 3px solid #bbb;
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    opacity: 0.7; }
   .gallery .thumbnails img:not(:last-child) {
     margin-right: 1%; }
 
 .gallery .thumbnails .selected {
-  border: 3px solid #130f40; }
+  border: 3px solid #130f40;
+  opacity: 1; }
 
 [data-default-color="blue"] .skin-color {
   color: #3498db; }

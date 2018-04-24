@@ -167,6 +167,18 @@ $('.animated-progress span').each(function () {         //every  'span' i do thi
 		
 	});
 
+// thumbnails gallery
+
+
+	$('.thumbnails img').on('click', function () {                               	//when i click on img in 'thumbnails' div this 'img' put class 'selected' 
+																					//( and  .siblings mean = Brothers)  removeClass('selected') from all Brothers
+		$(this).addClass('selected').siblings().removeClass('selected');
+
+		$('.master-img img').hide().attr('src', $(this).attr('src')).fadeIn(500);        //i will change the img source in 'master-img' to img source
+																				//i clicked on it
+
+	});
+
 }); 
 
 
