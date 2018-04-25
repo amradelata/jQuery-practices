@@ -214,6 +214,23 @@ $('.animated-progress span').each(function () {         //every  'span' i do thi
 	});
 
 
+
+// start products 
+
+// toggle products description
+
+$('.products .product i').on('click', function () {
+
+	$(this).toggleClass('fa-plus fa-minus')
+
+	$(this).next('p').slideToggle()
+});
+
+
+
+
+
+
 }); 
 
 
