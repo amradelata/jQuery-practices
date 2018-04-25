@@ -219,7 +219,7 @@ $('.animated-progress span').each(function () {         //every  'span' i do thi
 
 // toggle products description
 
-$('.products .product i').on('click', function () {
+$('.products .product i, .items .item i').on('click', function () {
 
 	$(this).toggleClass('fa-plus fa-minus')
 
