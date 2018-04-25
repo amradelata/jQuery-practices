@@ -227,9 +227,13 @@ $('.products .product i, .items .item i').on('click', function () {
 });
 
 
+// switch list and grid view
 
+$('.view-options i').on('click', function () {
+	$(this).addClass('active').siblings().removeClass('active')
+	$('.items').removeClass('gerid-view list-view').addClass($(this).data('class'));
 
-
+});
 
 }); 
 
