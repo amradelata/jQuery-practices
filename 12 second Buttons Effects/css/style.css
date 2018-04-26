@@ -347,14 +347,11 @@ body {
   width: 800px;
   margin: auto; }
 
-.our-form form {
-  width: 500px;
-  margin: auto; }
-
 .our-form form input,
 .our-form form textarea {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+  margin-top: 10px;
   padding: 10px;
   width: 100%; }
 
@@ -366,6 +363,9 @@ body {
   color: #fff;
   border: none;
   border-radius: 5px; }
+
+.our-form .the-message {
+  display: none; }
 
 [data-default-color="blue"] .skin-color {
   color: #3498db; }

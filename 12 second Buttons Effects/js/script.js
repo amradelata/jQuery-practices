@@ -257,7 +257,12 @@ $('.view-options i').on('click', function () {
 	 }).blur(function () {
 	 	$(this).attr('placeholder', placeAttr)     //when i blur 'placeholder' = value of placeAttr
 	 });
-
+	 // show message when fild is empty
+	 $('.required').blur(function () {
+	 	if($(this).val() == '') {
+	 		$(this).next('span').fadeIn(1000).delay(1000).fadeOut(1000);
+	 	}
+	 });
 }); 
 
 

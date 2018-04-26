@@ -166,10 +166,22 @@
 <!-- start our form  -->
 <div class="our-form">
 	<form>
-		<input type="text" placeholder="Your Name">
-		<input type="emil" placeholder="Your Emil">
-		<input type="password" placeholder="Your password">
-		<textarea placeholder="type Your Message"></textarea>
+		<div>
+		<input type="text" class="required" placeholder="Your Name">
+		<span class="the-message">Please Fill This Feild</span>
+		</div>
+		<div>
+		<input type="emil" class="required" placeholder="Your Emil">
+		<span class="the-message">Please Fill This Feild</span>
+		</div>
+		<div>
+		<input type="password" class="required" placeholder="Your password">
+		<span class="the-message">Please Fill This Feild</span>
+		</div>
+		<div>
+		<textarea class="required" placeholder="type Your Message"></textarea>
+		<span class="the-message">Please Fill This Feild</span>
+		</div>
 		<input type="submit" value="send">
 	</form>
 </div>
