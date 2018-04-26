@@ -242,6 +242,22 @@ $('.view-options i').on('click', function () {
  	});
  });
 
+
+ // our from
+ // practical Examples
+
+
+ // hide placeholder on focus & restore on blur
+ let placeAttr = '';
+
+ $('[placeholder]').focus(function () {            //this mean select anything it contains attr 'placeholder'
+
+ 	placeAttr = $(this).attr('placeholder')			//In storage $(this).attr('placeholder') in let  placeAttr
+ 	$(this).attr('placeholder', '')              //when i focus 'placeholder' = " nothing"
+	 }).blur(function () {
+	 	$(this).attr('placeholder', placeAttr)     //when i blur 'placeholder' = value of placeAttr
+	 });
+
 }); 
 
 
