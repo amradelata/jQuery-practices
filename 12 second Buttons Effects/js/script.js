@@ -232,8 +232,15 @@ $('.products .product i, .items .item i').on('click', function () {
 $('.view-options i').on('click', function () {
 	$(this).addClass('active').siblings().removeClass('active')
 	$('.items').removeClass('gerid-view list-view').addClass($(this).data('class'));
-
 });
+ // error message
+ $('.error-message').each(function () {
+ 	$(this).animate({
+ 		right: 0
+ 	}, 1000, function () {
+ 		$(this).delay(3000).fadeOut();
+ 	});
+ });
 
 }); 
 
