@@ -263,6 +263,42 @@ $('.view-options i').on('click', function () {
 	 		$(this).next('span').fadeIn(1000).delay(1000).fadeOut(1000);
 	 	}
 	 });
+	 // add asterisk to all required fild
+
+	 $('<span class="asterisk">*</span>').insertBefore(':input.required');   //this mean add <span class="asterisk">*</span> Before any input hasClass required
+
+
+	 $('.asterisk').parent('div').css('position', 'relative');
+
+	 $('.asterisk').each(function () {
+
+	 $(this).css({
+	 	'position': 'absolute',
+
+	 	'top': 12,
+
+	 	'left': $(this).parent('div').find(':input').innerWidth() - 20 ,
+	 	'color': '#ee5253'
+
+	 });
+
+	 });
+
+
+	 $('.the-message').each(function () {
+
+	 $(this).css({
+	 	'position': 'absolute',
+
+	 	'top': 5,
+
+	 	'left': $(this).parent('div').find(':input').innerWidth() - 205 ,
+
+	 	'color': '#ee5253'
+
+	 });
+
+	 });
 }); 
 
 
