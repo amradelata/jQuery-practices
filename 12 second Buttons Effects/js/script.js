@@ -302,8 +302,13 @@ $('.view-options i').on('click', function () {
 
  // customize the input fild
 
- $('.our-form input[type="file"]').wrap('<div class="custom-file"></div>');  //put input[type="file"] in div with class "custom-file"
- $('.custom-file').prepend('<span>Upload Your Files</span>')
+	 $('.our-form input[type="file"]').wrap('<div class="custom-file"></div>');  //put input[type="file"] in div with class "custom-file"
+	 $('.custom-file').prepend('<span>Upload Your Files</span>');
+	 $('.custom-file').append('<i class="fa fa-upload fa-lg skin-color"></i>');
+	 $('.our-form input[type="file"]').change(function () {
+
+	 		$(this).prev('span').text($(this).val());
+	 });
 
 }); 
 
