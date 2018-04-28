@@ -46,7 +46,7 @@ $(function () {
 		// scrollTop button
 
 		let buttonTop = $('.scroll-top');
-		if($(window).scrollTop()>=3000){
+		if($(window).scrollTop()>=5000){
 			buttonTop.fadeIn();
 			// console.log('dfds')
 		}else{
@@ -299,6 +299,12 @@ $('.view-options i').on('click', function () {
 	 });
 
 	 });
+
+ // customize the input fild
+
+ $('.our-form input[type="file"]').wrap('<div class="custom-file"></div>');  //put input[type="file"] in div with class "custom-file"
+ $('.custom-file').prepend('<span>Upload Your Files</span>')
+
 }); 
 
 

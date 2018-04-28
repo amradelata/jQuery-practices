@@ -14,6 +14,7 @@ body
 	width: 100%
 	top: 0
 	position: fixed
+	z-index: 9999
 
 	li
 		display: inline-block
@@ -424,11 +425,35 @@ body
 	width: 100%
 .our-form form textarea
 	height: 180px
+
+.our-form .custom-file
+	background: #fff
+	border: 1px solid #ddd
+	display: block
+	margin-bottom: 50px
+	position: relative
+	width: 100%
+	height: 50px
+
+.our-form .custom-file span
+	color: #c4aeae
+	display: inline-block
+	padding: 10px
+
+
+.our-form .custom-file input[type="file"]
+	opacity: 0
+	position: absolute	
+	left: 0
+	top: 0
+	cursor: pointer
+
 .our-form input[type="submit"]
 	background: #54a0ff
 	color: #fff
 	border: none
 	border-radius: 5px
+	cursor: pointer
 
 .our-form .the-message
 	display: none
