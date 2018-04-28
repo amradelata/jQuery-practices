@@ -309,7 +309,12 @@ $('.view-options i').on('click', function () {
 
 	 		$(this).prev('span').text($(this).val());
 	 });
+	// detect unicode of keyboard keys
+	$('.detect-unicode').on('keyup', function (e) {
+		let keyboardKeys = event.keyCode || event.which;
+		$('.unicode').html(keyboardKeys)
 
+	});
 }); 
 
 
