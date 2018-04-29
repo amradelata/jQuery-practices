@@ -335,14 +335,16 @@ $('.view-options i').on('click', function () {
 
 			let thisValue = $(this).val().slice(0, -1);
 
-			$('.tags').append('<span class="tag-span">' +thisValue+ '</span>');
+			$('.tags').append('<span class="tag-span"><i class="fa fa-times"></i>' +thisValue+ '</span>');
 
 			$(this).val('');
-
 		}
-
 	});
 
+// remove tag on click
+	$('.tags').on('click', '.tag-span i', function () {
+		$(this).parent('.tags span').fadeOut(500);
+	});
 }); 
 
 
