@@ -325,6 +325,24 @@ $('.view-options i').on('click', function () {
 			$(this).css('direction', 'rtl');
 		}
 	});
+
+	// change input lalue to tags
+
+		$('.add-tag').on('keyup', function (e) {
+		let keyboardKeys = event.keyCode || event.which;
+		
+		if (keyboardKeys === 188) {  // if comma pressed
+
+			let thisValue = $(this).val().slice(0, -1);
+
+			$('.tags').append('<span class="tag-span">' +thisValue+ '</span>');
+
+			$(this).val('');
+
+		}
+
+	});
+
 }); 
 
 
