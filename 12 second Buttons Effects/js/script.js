@@ -113,7 +113,17 @@ $(function () {
 			},500);
 
 		 });
-// animated-progress
+
+
+ // bounce button effects
+ $('.bounce').on('click', function () {
+ 	$(this).animate({
+ 		marginTop: '-=20px'    //margin (-=20px) mean take 20px from the originals margin
+ 	},400).animate({
+ 		marginTop: '+=20px' 	
+ 	}, 400);
+ });
+// animated-progress par
 
 $('.animated-progress span').each(function () {         //every  'span' i do this function on it 
 	$(this).animate({
@@ -331,7 +341,7 @@ $('.view-options i').on('click', function () {
 		$('.add-tag').on('keyup', function (e) {
 		let keyboardKeys = event.keyCode || event.which;
 		
-		if (keyboardKeys === 188) {  // if comma pressed
+		if (keyboardKeys === 188) {  // if comma pressed   .....e 38
 
 			let thisValue = $(this).val().slice(0, -1);
 
@@ -345,6 +355,38 @@ $('.view-options i').on('click', function () {
 	$('.tags').on('click', '.tag-span i', function () {
 		$(this).parent('.tags span').fadeOut(500);
 	});
+
+// trimmed text characters
+	// $('.trimmed-texts p').on('click', function () {
+		
+	// 	if ($(this).text().lenght > 100) {
+	// 		let trimmedText = $(this).text().substr(0, 100);     1  mo7ola
+	// 	}
+	// 	$(this).text() = trimmedText 	
+	// });
+
+
+	// $('.trimmed-texts p').each(function () {
+		
+	// 	if ($(this).text().lenght > 100) {
+	// 		let trimmedText = $(this).text().substr(0, 100);   2  mo7ola
+	// 	}
+	// 	$(this).text() = trimmedText 	
+	// });
+
+// function trimmedText(selector, maxeLenght) {
+
+// $(selector).each(function () {
+// 	if ($(this).text().lenght > maxeLenght){
+// 		let trimmedText = $(this).text().substr(0, maxeLenght);     3  mo7ola
+
+// 		$(this).text(trimmedText + '....')
+// 	}
+// });
+
+// }
+
 }); 
+
 
 
