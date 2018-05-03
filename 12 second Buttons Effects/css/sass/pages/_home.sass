@@ -5,6 +5,14 @@ body
 	padding: 0
 	margin: 0
 	font-family: Tahoma, Arial
+.container
+	width: 800px
+	margin: auto
+
+ul
+	list-style: none
+	margin: 0
+	padding: 0
 
 .navBar
 	background: rgba(0, 0, 0, .7)
@@ -377,6 +385,59 @@ body
 	border: none
 	width: 100%
 	font-weight: bold
+
+// auto changing notes
+.text-ticker
+	width: 400px
+	margin: 20px auto
+	background #fff
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+
+.text-ticker h3
+	padding: 15px
+	margin: 0
+	background: #eee
+
+.text-ticker .ticker-list
+	list-style: none
+
+.text-ticker .ticker-list li
+	padding: 15px 
+
+.text-ticker .ticker-list li:not(.active)	
+	display: none
+
+
+// dynamic tabs	
+.tabs-list li
+	padding: 15px 30px
+	background-color: #fff
+	display: inline-block
+	position: relative
+	top: 1px
+	cursor: pointer
+	border: 1px solid #ccc
+
+
+.tabs-list li:hover
+	color: #080
+
+.tabs-list li .active 
+	border-bottom: 1px solid #fff
+	z-index: 2
+
+.content-list
+	border: 1px solid #ccc
+	background-color: #fff
+	position: relative
+
+.content-list > div
+	padding: 20px
+	min-height: 200px
+
+
+.content-list > div:not(:first-child)
+	display: none
 
 // start products 
 .products

@@ -447,25 +447,62 @@ $('.view-options i').on('click', function () {
 
 // typeWriting Effects
 
-let theText = $('.typer').data('text'),
+// let theText = $('.typer').data('text'),
 
-	theTextLength = theText.length,
-	n = 0 ,
+// 	theTextLength = theText.length,
+// 	n = 0 ,
 
-	theTyper = setInterval(function () {
-		$('.typer').each(function () {
-			$(this).html($(this).html() + theText[n]);
+// 	theTyper = setInterval(function () {
+// 		$('.typer').each(function () {
+// 			$(this).html($(this).html() + theText[n]);
+
+// 		});
+
+
+// 		n += 1 ;
+// 		if (n >= theTextLength){
+// 			clearInterval(theTyper)
+// 		}
+// 	}, 200)
+
+
+
+// auto changing notes
+	(function autoChange() {
+
+		$('.ticker-list .active').each(function () {
+			if(! $(this).is(':last-child')) {
+
+				$(this).delay(1000).fadeOut(1000, function () {
+
+					$(this).removeClass('active').next().addClass('active').fadeIn();
+
+
+					 autoChange();
+				});
+
+			}else{
+				$(this).delay(1000).fadeOut(1000, function () {
+					$(this).removeclass('active')
+					$('.ticker-list li').eq(0).addClass('active').fadeIn;
+					autoChange();
+				});
+			}
 
 		});
 
+	}());
+// dynamic tabs	
 
-		n += 1 ;
-		if (n >= theTextLength){
-			clearInterval(theTyper)
-		}
-	}, 200)
+	$('.tabs-list li').on('click', function () {
 
+		$(this).addClass('active').siblings().removeclass('active');
 
+		$('.content-list > div').hide();
+		
+		$($(this).data('content')).fadeIn();
+
+	});
 }); 
 
 
