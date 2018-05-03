@@ -179,7 +179,7 @@ body
 	cursor: pointer
 	display: inline-block
 	text-align: center
-	margin: 20px
+	// margin: 20px
 	color: #fff
 	padding: 10px 50px
 	border-radius: 10px
@@ -283,9 +283,56 @@ body
 	right: 0
 
 
+// start cards
+.cards
+	position: relative
+	margin-top: 50px
+	min-height: 300px
+	z-index: 1
 
 
-	// start products 
+
+.cards .card
+	position: absolute
+	width: 300px
+	height: 300px
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+	left: 50%
+	margin-left: -150px
+	cursor: pointer
+
+
+.cards .card-1
+
+	background: #1abc9c
+
+.cards .card-2
+	background: #2ecc71
+
+.cards .card-2
+	background: #3498db
+
+.cards .card-3
+	background: #9b59b6
+
+
+.cards .card-4
+	background: #34495e	
+
+
+.cards .card-5
+	background: #f1c40f
+
+.cards .card-6
+	background: #b71540
+
+.cards .card-7
+	background: #079992
+
+
+.cards .card-8
+	background: #7f8c8d
+// start products 
 
 .products
 	width: 800px
@@ -498,6 +545,17 @@ body
 .trimmed-texts p
 	background-color: #ddd
 	padding: 10px
+
+.trimmed-texts.one
+	width: 200px
+	height: 200px
+	display: inline-block
+
+.trimmed-texts .tow
+	width: 200px
+	height: 400px
+	display: inline-block
+
 // start website theme colors
 [data-default-color="blue"] .skin-color
 	color: #3498db

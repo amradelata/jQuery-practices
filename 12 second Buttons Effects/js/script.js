@@ -118,11 +118,13 @@ $(function () {
  // bounce button effects
  $('.bounce').on('click', function () {
  	$(this).animate({
- 		marginTop: '-=20px'    //margin (-=20px) mean take 20px from the originals margin
+ 		top: '-=20px'    //margin (-=20px) mean take 20px from the originals margin
  	},400).animate({
- 		marginTop: '+=20px' 	
+ 		top: '+=20px' 	
  	}, 400);
  });
+
+
 // animated-progress par
 
 $('.animated-progress span').each(function () {         //every  'span' i do this function on it 
@@ -386,6 +388,32 @@ $('.view-options i').on('click', function () {
 
 // }
 
+
+
+	// shuffle cards
+
+
+	let zIndexValue = 0;
+
+	$('.cards .card').on('click', function () {
+		$(this).animate({
+
+
+			left: '30%',
+			marginTop: 30 
+
+		}, 400, function () {
+
+			zIndexValue--;
+
+			$(this).css('z-index', zIndexValue);
+		}).animate({
+			left: $(this).css('left'),     //'50%'  put the css left value here
+			marginTop: 0
+		}, 400);
+
+	});
+	
 }); 
 
 
